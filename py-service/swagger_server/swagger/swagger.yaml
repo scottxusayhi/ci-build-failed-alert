@@ -1,0 +1,48 @@
+openapi: 3.0.1
+info:
+  title: CI Pipeline Build Failed Alert
+  version: last
+servers:
+  - url: /
+tags:
+  - name: light_color
+    description: light color
+paths:
+  /light/{color}:
+    get:
+      tags:
+        - light_color
+      summary: switch light color
+      operationId: switch_light_color
+      parameters:
+        - name: color
+          in: path
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            enum:
+              - red
+              - orange
+              - yellow
+              - yellow_green_2
+              - yellow_green
+              - light_green
+              - green
+              - "off"
+      responses:
+        "200":
+          description: OK
+      x-openapi-router-controller: swagger_server.controllers.light_color_controller
+  /:
+    get:
+      tags:
+        - light_color
+      summary: help
+      operationId: root
+      responses:
+        "200":
+          description: OK
+      x-openapi-router-controller: swagger_server.controllers.light_color_controller
+components: {}
