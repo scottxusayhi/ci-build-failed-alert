@@ -6,4 +6,4 @@
 
 ## 实物
 
-![DFE3750C-3262-4902-889D-181509141553_1_105_c](/Users/xudi/projects/ci-build-failed-alert/real.png)
+![实物](real.png)
