@@ -44,7 +44,7 @@ class ArduinoLight(object):
             print(e)
 
 
-default_light = "/dev/cu.usbmodem143301"
+default_light = "/dev/cu.usbmodem143401"
 lights = {}
 
 
@@ -59,12 +59,12 @@ if __name__ == "__main__":
     arduino = get_light(default_light)
     arduino = get_light(default_light)
 
-    # arduino.switch("red", pause=1)
-    # arduino.switch("orange", pause=1)
+    arduino.switch("red", pause=1)
+    arduino.switch("orange", pause=1)
     arduino.switch("yellow", pause=1)
-    # arduino.switch("yellow_green_2", pause=1)
-    # arduino.switch("yellow_green", pause=1)
-    # arduino.switch("light_green", pause=1)
-    # arduino.switch("green", pause=1)
+    arduino.switch("yellow_green_2", pause=1)
+    arduino.switch("yellow_green", pause=1)
+    arduino.switch("light_green", pause=1)
+    arduino.switch("green", pause=1)
 
     arduino.switch("off", pause=1)
