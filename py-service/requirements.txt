@@ -13,7 +13,7 @@ idna==2.9
 inflection==0.4.0
 iso8601==0.1.12
 itsdangerous==1.1.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 jsonschema==2.6.0
 MarkupSafe==1.1.1
 openapi-spec-validator==0.2.8
